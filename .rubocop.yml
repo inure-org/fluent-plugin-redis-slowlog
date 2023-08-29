@@ -1,0 +1,17 @@
+inherit_gem:
+  inure-styles:
+    - rubocop-default.yml
+
+AllCops:
+  TargetRubyVersion: 2.4
+
+# apenas capturar algo do início
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+# isso não é rails, então desabilitar esses
+Rails/RakeEnvironment:
+  Enabled: false
+CodeReuse/ActiveRecord:
+  Enabled: false
